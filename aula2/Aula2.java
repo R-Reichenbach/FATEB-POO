@@ -1,20 +1,30 @@
-package aula2;
+
 
 class Aula2 {
 
     public static void main(String[] args){
-        Carro carro = new Carro();
-        carro.acelerar();
+        Carro fusca = new Carro("verde", "vw", "1960");
+        String informacoes = fusca.informacoes();
+        System.err.println(informacoes);
+
     }
 }
 
     class Carro{
 
         String cor;
-        String Marca;
+        String marca;
         String anoFabricacao;
 
-        public void acelerar(){
-            System.out.print("O carro acelerou !");
+
+        Carro(String cor, String marca, String anoFabricacao){
+            this.cor = cor;
+            this.marca = marca;
+            this.anoFabricacao = anoFabricacao;
+        }
+        
+                //void = não retorna nada!
+        public String informacoes(){
+            return "cor: " + cor + "- marca: " + marca + " - ano de fabricação: " + anoFabricacao;
         }
     }
