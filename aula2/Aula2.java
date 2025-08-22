@@ -28,3 +28,4 @@ class Aula2 {
             return "cor: " + cor + "- marca: " + marca + " - ano de fabricação: " + anoFabricacao;
         }
     }
+    
