@@ -1,4 +1,4 @@
-package AulaJava;
+package aula2;
 
 class Aula2 {
 
