@@ -4,9 +4,9 @@ class Aula2 {
 
     public static void main(String[] args){
         Carro fusca = new Carro("verde", "vw", "1960");
-        String informacoes = fusca.informacoes();
-        System.err.println(informacoes);
+        
 
+        System.err.println(new Carro("verde", "vw", "1960"));       
     }
 }
 
@@ -26,6 +26,10 @@ class Aula2 {
                 //void = não retorna nada!
         public String informacoes(){
             return "cor: " + cor + "- marca: " + marca + " - ano de fabricação: " + anoFabricacao;
+        }
+
+        public void imprimeInformacoes(){
+            System.out.println("cor: " + cor + " - marca: ");
         }
     }
     
