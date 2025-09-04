@@ -14,8 +14,10 @@ public class exercicio {
         System.out.print("Digite o nome da matéria: ");
         aluno1.materia = scanner.nextLine();
 
-        System.out.print("Digite a nota da materia: ");
-        aluno1.atribui_nota(scanner.nextDouble());
+        while (aluno1.nota < 0 || aluno1.nota >10) {
+            System.out.print("Digite a nota da materia: ");
+            aluno1.atribui_nota(scanner.nextDouble());
+        }
 
         System.out.println("o aluno foi " + aluno1.foiAprovado() + " na materia " + aluno1.materia);
         scanner.close();
@@ -24,10 +26,10 @@ public class exercicio {
 
 class Aluno{
 
-        String nome;
-        String ra;
-        String materia;
-        Double nota;
+        String nome = null;
+        String ra = null;
+        String materia = null;
+        double nota = -1;
 
         Aluno(){
         }
