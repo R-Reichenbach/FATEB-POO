@@ -1,12 +1,16 @@
 public class Cliente {
     String nome;
     String email;
-    Cidade cidade;
+    Cidade municipio;
 
     
     public Cliente(String nome, String email, Cidade cidade){
         this.nome = nome;
         this.email = email;
-        this.cidade = cidade;
+        this.municipio = cidade;
+    }
+
+    public String getNomeCidade(){
+        return this.municipio.nome;
     }
 }

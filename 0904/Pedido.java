@@ -13,4 +13,12 @@ public class Pedido {
         this.valor = valor;
         this.cliente = cliente;
     }
+
+    public String getNomeCliente(){
+        return this.cliente.nome;
+    }
+
+    public String getNomeCidadeDoCliente(){
+        return this.cliente.getNomeCidade();
+    }
 }
