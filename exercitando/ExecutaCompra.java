@@ -41,7 +41,7 @@ public class ExecutaCompra {
         scanner.nextLine(); 
 
 
-        ItemPedido item = new ItemPedido(1, produto, quantidade);
+        ItemPedido item = new ItemPedido(1,produto, quantidade);
         double subtotal = item.produto.preco * item.quantidade;
 
         // Mostrar os resultados

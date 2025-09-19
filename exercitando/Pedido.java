@@ -6,5 +6,7 @@ public class Pedido {
 
     Pedido(String numero, Cliente cliente, ItemPedido itempedido){
         this.numero = numero;
+        this.cliente = cliente;
+        this.itempedido = itempedido;
     }
 }
