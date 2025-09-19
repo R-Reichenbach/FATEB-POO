@@ -9,4 +9,8 @@ public class ItemPedido {
         this.produto = produto;
         this.quantidade = quantidade;
     }
+
+    public double ContaPedido(){
+        return this.produto.preco * quantidade;
+    }
 }

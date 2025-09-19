@@ -45,7 +45,7 @@ public class ExecutaCompra {
         double subtotal = item.produto.preco * item.quantidade;
 
         // Mostrar os resultados
-        System.out.println("Valor total das vendas: " + subtotal);
+        System.out.println("Valor total das vendas: " + item.ContaPedido());
         System.out.println("A cidade do Cliente é: " + cliente.cidade.nome);
         System.out.println("Preço unitário do produto: " + produto.preco);
 
