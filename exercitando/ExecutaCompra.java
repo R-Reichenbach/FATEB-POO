@@ -42,7 +42,6 @@ public class ExecutaCompra {
 
 
         ItemPedido item = new ItemPedido(1,produto, quantidade);
-        double subtotal = item.produto.preco * item.quantidade;
 
         // Mostrar os resultados
         System.out.println("Valor total das vendas: " + item.ContaPedido());
