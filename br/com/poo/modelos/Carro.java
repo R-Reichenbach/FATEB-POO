@@ -1,34 +1,48 @@
 package br.com.poo.modelos;
 
-    public class Carro {
+public class Carro {
+    private String marca;
+    private String modelo;
+    private String placa;
+    private boolean disponivel;
 
-        private String marca;
-        private String modelo;
-        private String placa;
-        private Boolean disponivel;
+    public Carro() {
+        // construtor vazio
+        this.disponivel = true;
+    }
 
-        public Carro() {
-            // Do nothing
-        }
+    public Carro(String marca, String modelo, String placa) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.placa = placa;
+        this.disponivel = true;
+    }
 
-        // setters
-        public void setMarca(String marca){
-            this.marca = marca;
-        }
-        public void setModelo(String modelo){
-            this.modelo = modelo;
-        }
-        public void setPlaca(String placa) throws Exception{
-            if (this.placa == null){
-                this.placa = placa;
-            }else {
-                throw new Exception("O conteudo de placa não pode ser alterado.");
-            }
-        }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
 
-        @Override
-        public String toString() {
-            return "Marca  : " + this.marca + "\nModelo : " + this.modelo + "\nPlaca  : " 
-            + this.placa ;
+    public String getMarca() {
+        return this.marca;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public void setPlaca(String placa) throws Exception {
+        if (this.placa == null) {
+            this.placa = placa;
+        } else {
+            throw new Exception("A placa do carro já foi definida");
         }
     }
+
+    public String getPlaca() {
+        return this.placa;
+    }
+}
